@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Libre+Franklin:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=agnus-v1-20260602">
+  <link rel="stylesheet" href="styles.css?v=central-assets-20260602">
 </head>
 <body data-theme="rodizios">
   <main class="menu-shell">
@@ -44,7 +44,8 @@
 
     <div class="tab-panels">
       <section class="panel is-active" id="panel-rodizios" role="tabpanel" aria-labelledby="tab-rodizios">
-        <div class="section-head">
+        <div class="section-head section-head--with-art">
+          <img class="section-art" src="assets/icon-boi-transparent.png" alt="" aria-hidden="true">
           <span>Serviço da casa</span>
           <h2>Rodízios</h2>
           <p>Escolha o caminho principal da mesa: pizzas saindo do forno ou espetinhos na brasa, com organização simples para pedir sem se perder.</p>
@@ -64,7 +65,7 @@
           <button class="subtab subtab--major" type="button" data-target="rodizio-espetinhos">Espetinhos</button>
         </div>
 
-        <div class="subpanel is-active" id="rodizio-pizzas">
+        <div class="subpanel visual-panel visual-panel--pizza is-active" id="rodizio-pizzas">
           <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias de pizzas">
             <button class="subtab is-active" type="button" data-target="pizza-tradicionais">Tradicionais</button>
             <button class="subtab" type="button" data-target="pizza-especiais">Especiais</button>
@@ -98,7 +99,7 @@
           </div>
         </div>
 
-        <div class="subpanel" id="rodizio-espetinhos" hidden>
+        <div class="subpanel visual-panel visual-panel--churrasco" id="rodizio-espetinhos" hidden>
           <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias de espetinhos">
             <button class="subtab is-active" type="button" data-target="espeto-carnes">Carnes</button>
             <button class="subtab" type="button" data-target="espeto-aves">Aves e Suínos</button>
@@ -141,7 +142,8 @@
       </section>
 
       <section class="panel" id="panel-self-service" role="tabpanel" aria-labelledby="tab-self-service" hidden>
-        <div class="section-head">
+        <div class="section-head section-head--with-art">
+          <img class="section-art" src="assets/icon-chef-clean.png" alt="" aria-hidden="true">
           <span>Almoço da casa</span>
           <h2>Self-Service</h2>
           <p>Buffet organizado por estações simples: proteínas, bases, guarnições e saladas, para o cliente montar o prato rapidamente.</p>
@@ -192,7 +194,8 @@
       </section>
 
       <section class="panel" id="panel-a-la-carte" role="tabpanel" aria-labelledby="tab-a-la-carte" hidden>
-        <div class="section-head">
+        <div class="section-head section-head--with-art">
+          <img class="section-art" src="assets/icon-espatula-transparent.png" alt="" aria-hidden="true">
           <span>Pratos montados</span>
           <h2>À La Carte</h2>
           <p>Pratos individuais e opções para dividir, com brasa, massas, parmegianas e petiscos.</p>
@@ -238,7 +241,8 @@
       </section>
 
       <section class="panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
-        <div class="section-head">
+        <div class="section-head section-head--with-art">
+          <img class="section-art" src="assets/icon-bebidas-clean.png" alt="" aria-hidden="true">
           <span>Para acompanhar</span>
           <h2>Bebidas</h2>
           <p>Opções geladas para almoço, rodízio e noite de grill.</p>
@@ -248,7 +252,7 @@
           <button class="subtab is-active" type="button" data-target="bebidas-frias">Frias</button>
           <button class="subtab" type="button" data-target="bebidas-sucos">Sucos</button>
           <button class="subtab" type="button" data-target="bebidas-cervejas">Cervejas</button>
-          <button class="subtab" type="button" data-target="bebidas-drinks">Drinks</button>
+          <button class="subtab subtab--with-icon" type="button" data-target="bebidas-drinks"><img src="assets/icon-drinks-clean.png" alt="" aria-hidden="true">Drinks</button>
         </div>
 
         <div class="subpanel is-active" id="bebidas-frias">
@@ -285,7 +289,8 @@
       </section>
 
       <section class="panel" id="panel-sobremesas" role="tabpanel" aria-labelledby="tab-sobremesas" hidden>
-        <div class="section-head">
+        <div class="section-head section-head--with-art">
+          <img class="section-art" src="assets/icon-chef-clean.png" alt="" aria-hidden="true">
           <span>Final doce</span>
           <h2>Sobremesas</h2>
           <p>Clássicos para fechar o almoço ou o rodízio.</p>
