@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#062d1d">
+  <title>Agnus Grill - Cardápio Digital</title>
+  <meta name="description" content="Cardápio digital do Agnus Grill: rodízio de pizzas, espetinhos, self-service e à la carte no Passaré.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Libre+Franklin:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=agnus-v1-20260602">
+</head>
+<body data-theme="rodizios">
+  <main class="menu-shell">
+    <div class="background-ornaments" aria-hidden="true">
+      <span class="ornament ornament--flame"></span>
+      <span class="ornament ornament--pizza"></span>
+      <span class="ornament ornament--skewer"></span>
+      <span class="ornament ornament--plate">AG</span>
+    </div>
+
+    <header class="cover" id="inicio">
+      <div class="cover-shade"></div>
+      <img class="hero-logo" src="assets/agnus-logo-hero.png" alt="Agnus Grill" width="1792" height="1024" fetchpriority="high">
+      <span class="menu-word">Cardápio Digital</span>
+      <h1 class="sr-only">Agnus Grill</h1>
+    </header>
+
+    <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardápio">
+      <button class="tab is-active" id="tab-rodizios" type="button" role="tab" aria-selected="true" aria-controls="panel-rodizios" data-theme="rodizios"><span>01</span><b>Rodízios</b></button>
+      <button class="tab" id="tab-self-service" type="button" role="tab" aria-selected="false" aria-controls="panel-self-service" data-theme="self-service"><span>02</span><b>Self-Service</b></button>
+      <button class="tab" id="tab-a-la-carte" type="button" role="tab" aria-selected="false" aria-controls="panel-a-la-carte" data-theme="a-la-carte"><span>03</span><b>À La Carte</b></button>
+      <button class="tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-theme="bebidas"><span>04</span><b>Bebidas</b></button>
+      <button class="tab" id="tab-sobremesas" type="button" role="tab" aria-selected="false" aria-controls="panel-sobremesas" data-theme="sobremesas"><span>05</span><b>Sobremesas</b></button>
+      <button class="tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-theme="info"><span>06</span><b>Info</b></button>
+    </nav>
+
+    <section class="menu-status" aria-label="Resumo do cardápio">
+      <span>Rodízio, buffet e brasa</span>
+      <span>Seg. 11h - 15h</span>
+      <span>Ter. a dom. 11h - 22h30</span>
+    </section>
+
+    <div class="tab-panels">
+      <section class="panel is-active" id="panel-rodizios" role="tabpanel" aria-labelledby="tab-rodizios">
+        <div class="section-head">
+          <span>Serviço da casa</span>
+          <h2>Rodízios</h2>
+          <p>Escolha o caminho principal da mesa: pizzas saindo do forno ou espetinhos na brasa, com organização simples para pedir sem se perder.</p>
+        </div>
+
+        <div class="feature-strip feature-strip--fire">
+          <div class="stamp">Brasa</div>
+          <div>
+            <span>Mesa cheia</span>
+            <h3>Pizza, espetinho e clima de grill</h3>
+            <p>Rodízios pensados para grupo, família e noite de Passaré, com sabores clássicos e especiais.</p>
+          </div>
+        </div>
+
+        <div class="subtabs subtabs--featured" role="tablist" aria-label="Tipos de rodízio">
+          <button class="subtab subtab--major is-active" type="button" data-target="rodizio-pizzas">Pizzas</button>
+          <button class="subtab subtab--major" type="button" data-target="rodizio-espetinhos">Espetinhos</button>
+        </div>
+
+        <div class="subpanel is-active" id="rodizio-pizzas">
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias de pizzas">
+            <button class="subtab is-active" type="button" data-target="pizza-tradicionais">Tradicionais</button>
+            <button class="subtab" type="button" data-target="pizza-especiais">Especiais</button>
+            <button class="subtab" type="button" data-target="pizza-doces">Doces</button>
+          </div>
+
+          <div class="subpanel is-active" id="pizza-tradicionais">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássica</span><h3>Mussarela</h3><p>Queijo, molho de tomate e orégano.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Clássica</span><h3>Calabresa</h3><p>Calabresa fatiada, cebola e queijo.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Clássica</span><h3>Frango com catupiry</h3><p>Frango desfiado, catupiry e toque de milho.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Clássica</span><h3>Portuguesa</h3><p>Presunto, ovo, cebola, ervilha e queijo.</p></div><strong>Rodízio</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="pizza-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Especial</span><h3>Carne de sol</h3><p>Carne de sol desfiada, queijo, cebola roxa e cheiro-verde.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Especial</span><h3>Quatro queijos</h3><p>Mussarela, provolone, parmesão e catupiry.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Especial</span><h3>Filé com cheddar</h3><p>Tiras de carne, cheddar cremoso e cebola crispy.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Especial</span><h3>Moda da casa</h3><p>Combinação especial do Agnus conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="pizza-doces" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Doce</span><h3>Chocolate</h3><p>Chocolate cremoso e finalização da casa.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Doce</span><h3>Banana com canela</h3><p>Banana, açúcar e canela.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Doce</span><h3>Romeu e Julieta</h3><p>Queijo com goiabada cremosa.</p></div><strong>Rodízio</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="rodizio-espetinhos" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias de espetinhos">
+            <button class="subtab is-active" type="button" data-target="espeto-carnes">Carnes</button>
+            <button class="subtab" type="button" data-target="espeto-aves">Aves e Suínos</button>
+            <button class="subtab" type="button" data-target="espeto-especiais">Especiais</button>
+            <button class="subtab" type="button" data-target="espeto-apoio">Acompanhamentos</button>
+          </div>
+
+          <div class="subpanel is-active" id="espeto-carnes">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Bovino</span><h3>Alcatra</h3><p>Espetinho bovino grelhado na brasa.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Bovino</span><h3>Carne de sol</h3><p>Espetinho regional com tempero da casa.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Bovino</span><h3>Kafta</h3><p>Carne moída temperada e grelhada.</p></div><strong>Rodízio</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="espeto-aves" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Aves</span><h3>Frango com bacon</h3><p>Frango envolto em bacon, servido quente.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Aves</span><h3>Coração de frango</h3><p>Clássico de churrasco com molho de alho.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Suíno</span><h3>Linguiça toscana</h3><p>Linguiça grelhada e fatiada na mesa.</p></div><strong>Rodízio</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="espeto-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Queijo</span><h3>Queijo coalho</h3><p>Dourado na brasa, com melaço ou orégano.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Especial</span><h3>Pão de alho</h3><p>Assado na brasa para acompanhar os espetos.</p></div><strong>Rodízio</strong></article>
+              <article class="menu-item"><div><span>Especial</span><h3>Legumes grelhados</h3><p>Opção leve para acompanhar a sequência.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="espeto-apoio" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Base</span><h3>Baião de dois</h3><p>Base regional para espetinhos e carnes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Clássico do almoço e jantar.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Extra</span><h3>Farofa e vinagrete</h3><p>Dupla essencial para churrasco.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-self-service" role="tabpanel" aria-labelledby="tab-self-service" hidden>
+        <div class="section-head">
+          <span>Almoço da casa</span>
+          <h2>Self-Service</h2>
+          <p>Buffet organizado por estações simples: proteínas, bases, guarnições e saladas, para o cliente montar o prato rapidamente.</p>
+        </div>
+
+        <div class="subtabs subtabs--featured subtabs--quad" role="tablist" aria-label="Estações do self-service">
+          <button class="subtab subtab--major is-active" type="button" data-target="self-proteinas">Proteínas</button>
+          <button class="subtab subtab--major" type="button" data-target="self-bases">Bases</button>
+          <button class="subtab subtab--major" type="button" data-target="self-guarnicoes">Guarnições</button>
+          <button class="subtab subtab--major" type="button" data-target="self-saladas">Saladas</button>
+        </div>
+
+        <div class="subpanel is-active" id="self-proteinas">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Brasa</span><h3>Frango grelhado</h3><p>Opção leve para almoço.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Panela</span><h3>Carne de panela</h3><p>Molho caseiro e preparo lento.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Clássico</span><h3>Frango à parmegiana</h3><p>Clássico de self-service com molho e queijo.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Carne de sol acebolada</h3><p>Combina com baião, macaxeira e farofa.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-bases" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base diária do buffet.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Baião de dois</h3><p>Arroz e feijão com tempero regional.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Feijão</span><h3>Feijão carioca</h3><p>Preparo simples para almoço.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Massa</span><h3>Macarrão ao molho</h3><p>Opção quente para completar o prato.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-guarnicoes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Raiz</span><h3>Macaxeira cozida</h3><p>Acompanha carnes e espetinhos.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Quente</span><h3>Batata frita</h3><p>Clássico de buffet e à la carte.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Quente</span><h3>Legumes salteados</h3><p>Opção leve e colorida.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Extra</span><h3>Farofa da casa</h3><p>Finalização para carnes, baião e vinagrete.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-saladas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Fresco</span><h3>Folhas verdes</h3><p>Seleção diária do buffet.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Clássico</span><h3>Tomate, pepino e cenoura</h3><p>Base de salada simples.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Frio</span><h3>Salada de maionese</h3><p>Tradicional de almoço.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Para acompanhar carnes e espetinhos.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-a-la-carte" role="tabpanel" aria-labelledby="tab-a-la-carte" hidden>
+        <div class="section-head">
+          <span>Pratos montados</span>
+          <h2>À La Carte</h2>
+          <p>Pratos individuais e opções para dividir, com brasa, massas, parmegianas e petiscos.</p>
+        </div>
+
+        <div class="subtabs subtabs--featured subtabs--quad" role="tablist" aria-label="Categorias à la carte">
+          <button class="subtab subtab--major is-active" type="button" data-target="carte-pratos">Pratos</button>
+          <button class="subtab subtab--major" type="button" data-target="carte-massas">Massas</button>
+          <button class="subtab subtab--major" type="button" data-target="carte-petiscos">Petiscos</button>
+          <button class="subtab subtab--major" type="button" data-target="carte-kids">Kids</button>
+        </div>
+
+        <div class="subpanel is-active" id="carte-pratos">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Brasa</span><h3>Prato de picanha</h3><p>Arroz, feijão, farofa, vinagrete e batata.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Carne de sol completa</h3><p>Baião, macaxeira, farofa e vinagrete.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Clássico</span><h3>Filé à parmegiana</h3><p>Arroz, fritas e molho da casa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="carte-massas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Massa</span><h3>Espaguete ao sugo</h3><p>Molho de tomate e queijo ralado.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Massa</span><h3>Espaguete à bolonhesa</h3><p>Molho de carne e tempero da casa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opção cremosa para almoço ou jantar.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="carte-petiscos" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Petisco</span><h3>Batata frita</h3><p>Porção para mesa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Petisco</span><h3>Macaxeira frita</h3><p>Crocante por fora, macia por dentro.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Brasa</span><h3>Espetinho avulso</h3><p>Escolha o sabor e acompanhe com farofa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="carte-kids" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Kids</span><h3>Frango, arroz e fritas</h3><p>Prato simples para crianças.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Kids</span><h3>Mini pizza</h3><p>Sabores clássicos conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
+        <div class="section-head">
+          <span>Para acompanhar</span>
+          <h2>Bebidas</h2>
+          <p>Opções geladas para almoço, rodízio e noite de grill.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de bebidas">
+          <button class="subtab is-active" type="button" data-target="bebidas-frias">Frias</button>
+          <button class="subtab" type="button" data-target="bebidas-sucos">Sucos</button>
+          <button class="subtab" type="button" data-target="bebidas-cervejas">Cervejas</button>
+          <button class="subtab" type="button" data-target="bebidas-drinks">Drinks</button>
+        </div>
+
+        <div class="subpanel is-active" id="bebidas-frias">
+          <div class="price-grid">
+            <article><h3>Água mineral</h3><strong>Consulte</strong><span>Com ou sem gás</span></article>
+            <article><h3>Refrigerante lata</h3><strong>Consulte</strong><span>Sabores variados</span></article>
+            <article><h3>Refrigerante 1L</h3><strong>Consulte</strong><span>Para mesa</span></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-sucos" hidden>
+          <div class="price-grid">
+            <article><h3>Suco natural</h3><strong>Consulte</strong><span>Acerola, cajá, goiaba</span></article>
+            <article><h3>Jarra de suco</h3><strong>Consulte</strong><span>1 litro</span></article>
+            <article><h3>Água de coco</h3><strong>Consulte</strong><span>Copo</span></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-cervejas" hidden>
+          <div class="price-grid">
+            <article><h3>Cerveja long neck</h3><strong>Consulte</strong><span>Marcas disponíveis</span></article>
+            <article><h3>Cerveja 600ml</h3><strong>Consulte</strong><span>Para mesa</span></article>
+            <article><h3>Chopp</h3><strong>Consulte</strong><span>Conforme disponibilidade</span></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-drinks" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Clássico</span><h3>Caipirinha</h3><p>Limão, cachaça e açúcar.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Vodka</span><h3>Caipiroska</h3><p>Vodka, fruta e gelo.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Gin</span><h3>Gin tônica</h3><p>Gin, tônica e especiarias.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-sobremesas" role="tabpanel" aria-labelledby="tab-sobremesas" hidden>
+        <div class="section-head">
+          <span>Final doce</span>
+          <h2>Sobremesas</h2>
+          <p>Clássicos para fechar o almoço ou o rodízio.</p>
+        </div>
+        <div class="price-grid">
+          <article><h3>Pudim</h3><strong>Consulte</strong><span>Fatia</span></article>
+          <article><h3>Brownie com sorvete</h3><strong>Consulte</strong><span>Chocolate</span></article>
+          <article><h3>Cartola</h3><strong>Consulte</strong><span>Banana, queijo e canela</span></article>
+          <article><h3>Sorvete</h3><strong>Consulte</strong><span>Sabores disponíveis</span></article>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" hidden>
+        <div class="section-head">
+          <span>Agnus Grill</span>
+          <h2>Informações</h2>
+          <p>Rodízio, self-service e pratos à la carte no Passaré.</p>
+        </div>
+        <div class="info-grid">
+          <article><span>Endereço</span><p>Av. Prudente Brasil, 33 - Passaré</p></article>
+          <article><span>Horário</span><p>Segunda: 11h - 15h<br>Terça a domingo: 11h - 22h30</p></article>
+          <article><span>WhatsApp</span><p>(85) 9688-7457</p></article>
+          <article><span>Instagram</span><p>@agnusgrill</p></article>
+          <article><span>Especialidade</span><p>Rodízio de pizzas, rodízio de espetinhos, self-service e à la carte.</p></article>
+          <article><span>Localização</span><p>Passaré, Fortaleza - CE</p></article>
+        </div>
+      </section>
+    </div>
+
+    <footer class="menu-footer">
+      <div class="footer-copy">
+        <span>Agnus Grill</span>
+        <p>Av. Prudente Brasil, 33 - Passaré</p>
+      </div>
+      <div class="footer-brand" aria-label="Produto QrStack">
+        <div class="qrstack-lockup">
+          <span class="product-copy">Produto</span>
+          <img class="qrstack-mark" src="assets/qrstack-mark.png" alt="">
+        </div>
+        <img class="qrstack-wordmark" src="assets/qrstack-wordmark.png" alt="QrStack">
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
